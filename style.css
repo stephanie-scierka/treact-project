@@ -59,6 +59,12 @@ nav {
     justify-content: space-between;
 }
 
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .nav__logo {
     display: flex;
     align-items: center;
@@ -72,7 +78,7 @@ nav {
 }
 
 img {
-    width: 100%;
+    overflow-clip-margin: content-box;
     overflow: clip;
 }
 
@@ -188,6 +194,7 @@ svg:not(:root) {
 }
 
 .btn__menu {
+    display: none;
     background-color: transparent;
     border: none;
     transition: all 300ms ease;
@@ -201,18 +208,17 @@ svg:not(:root) {
 
 .btn__menu:hover {
     color: #6415ff;
-    transition: color 0.3s;
+    background-color: transparent;
 }
 
 .btn__menu--svg {
-   width: 24px;
-   height: 24px;
-   fill: none;
-   transition: transform 0.3s ease;
+   width: 24;
+   height: 24;
+   transition: transform 0.3s ease, fill 0.3s ease;
 }
 
-.btn__menu--svg:hover {
-    filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261 deg) brightness(94%) contrast(115%)
+.btn__menu:hover .btn__menu--svg {
+    color: #6415ff;
 }
 
 
@@ -756,8 +762,13 @@ MOBILE RESPONSIVENESS ↓
 
 @media (max-width: 1024px) {
     .btn__menu {
+        display: block;
+    }
+
+    .nav__links {
         display: none;
     }
+
     .header__description {
         text-align: center;
         display: flex;
