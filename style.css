@@ -347,7 +347,7 @@ header .row {
     border-radius: 500px;
     border: 2px solid #e5e7eb;
     padding: 20px 192px 20px 32px;
-    color: #243e63;
+    color: #d3cfcf;
     font-size: 16px;
     font-weight: 500;
     position: absolute;
@@ -369,6 +369,11 @@ header .row {
     font-weight: 700;
     font-size: 16px;
     transition: all 300ms ease;
+}
+
+.header__email--btn:hover {
+    background-color: #5011cc;
+    color: #fff;
 }
 
 .header__customers--title {
@@ -688,6 +693,142 @@ VALUES ↓
     align-items: center;
 }
 
+.values__description {
+    padding: 32px 64px 32px 0;
+}
+
+.values__section--tag {
+    font-size: 16px;
+    color: #6415ff;
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.values__section--title {
+    margin: 16px 0;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+}
+
+.values__section--para {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7c8ba1;
+    line-height: 1.625;
+}
+
+.values__list {
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+}
+
+.value__afford {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.value__title--afford {
+    display: flex;
+    align-items: center;
+}
+
+.value__afford_img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #9ae6b4;
+}
+
+.value__afford-img {
+    width: 20px;
+    height: 20px;
+}
+
+.value__afford--name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.value__afford--para {
+    margin-top: 16px;
+    line-height: 1.625;
+    color: #718096;
+}
+
+.value__prof {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.value__title--prof {
+    display: flex;
+    align-items: center;
+}
+
+.value__prof_img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #feb2b2;
+}
+
+.value__prof-img {
+    width: 20px;
+    height: 20px;
+}
+
+.value__prof--name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+}
+
+.value__prof--para {
+    margin-top: 16px;
+    line-height: 1.625;
+    color: #718096;
+}
+
+.btn__values {
+    margin-top: 48px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 500px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6415ff;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.btn__values:hover {
+    background-color: #5011cc;
+    color: #fff;
+}
+
+.values__img {
+    width: 50%;
+}
 
 /*
 
@@ -755,6 +896,13 @@ MOBILE RESPONSIVENESS ↓
     header .row {
         align-items: flex-end;
     }
+
+    h1 {
+        font-size: 36px;
+        color: #1a202c;
+        line-height: 1.25;
+    }
+
     .header__customers {
         padding-right: 64px;
     }
@@ -767,6 +915,10 @@ MOBILE RESPONSIVENESS ↓
 
     .nav__links {
         display: none;
+    }
+
+    h1 {
+        font-size: 30px;
     }
 
     .header__description {
@@ -788,6 +940,12 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
         align-items: center;
     }
+
+    .feature {
+        width: calc(50%);
+    }
+
+
     footer {
         padding: 80px 32px;
     }
@@ -806,6 +964,15 @@ MOBILE RESPONSIVENESS ↓
     #pricing .row {
         margin-top: 40px;
     }
+
+    .feature {
+        width: auto;
+        max-width: 384px;
+    }
+
+    .values__section--title {
+        font-size: 32px;
+    }
 }
 
 @media(max-width: 640px) {
@@ -822,7 +989,50 @@ MOBILE RESPONSIVENESS ↓
         letter-spacing: 0.05em;
     }
 
+    .header__email {
+        flex-direction: column;
+        height: auto;
+    }
 
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+
+    #features .section__title {
+        font-size: 36px;
+    }
+
+    #feature .section__para {
+        text-align: center;
+        max-width: 576px;
+    }
+
+    .feature__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature__text {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .values__section--title {
+        font-size: 36px;
+    }
 
     main {
         margin-bottom: 80px;
