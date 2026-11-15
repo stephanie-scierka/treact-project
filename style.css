@@ -297,7 +297,7 @@ div {
 
 h1 {
     display: block;
-    font-size: 32px;
+    font-size: 48px;
     color: #1a202c;
     line-height: 1.25;
     margin-block-start: 0.67em;
@@ -324,7 +324,6 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-
 }
 
 header .row {
