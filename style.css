@@ -576,7 +576,7 @@ img {
   bottom: -40px;
   right: -40px;
   background-image: radial-gradient(#6415ff 1px, transparent 1px);
-  background-size: 6px 6px;
+  background-size: 8px 8px;
   z-index: -1;
 }
 
@@ -1323,7 +1323,6 @@ FOOTER ↓
 
 */
 
-
 footer {
     padding: 96px 32px;
     background-color: rgb(100, 21, 255);
@@ -1381,6 +1380,7 @@ footer {
 }
 
 .footer__column--link {
+    text-decoration: none;
     color: #f7fafc;
     font-size: 14px;
     margin-top: 12px;
@@ -1388,6 +1388,13 @@ footer {
     font-weight: 500;
     position: relative;
     cursor: pointer;
+}
+
+.footer__column--link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    transition: transform 0.3s ease;
 }
 
 .footer__column--link:nth-child(2) {
