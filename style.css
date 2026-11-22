@@ -1548,8 +1548,13 @@ MOBILE RESPONSIVENESS ↓
         padding-right: 0px;
     }
 
-    #features .section__title {
-        font-size: 48px;
+    .section__title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .section__para {
+        font-size: 16px;
     }
 
     .features {
@@ -1573,14 +1578,16 @@ MOBILE RESPONSIVENESS ↓
         font-size: 16px;
     }
 
-
-
     .quality__description {
         margin-right: 0px;
         padding-right: 48px;
     }
 
     .quality__section--title {
+        font-size: 36px;
+    }
+
+    .steps__title {
         font-size: 36px;
     }
 
@@ -1619,6 +1626,10 @@ MOBILE RESPONSIVENESS ↓
 
     .testimonials__description {
         padding-left: 48px;
+    }
+
+    .testimonials__section--title {
+        font-size: 36px;
     }
 
     .testimonials__section--para {
@@ -1667,6 +1678,12 @@ MOBILE RESPONSIVENESS ↓
     .feature {
         width: auto;
         max-width: 384px;
+    }
+
+    .section__para {
+        text-align: center;
+        font-size: 16px;
+        max-width: 576px;
     }
     
     .quality__description, 
@@ -1766,6 +1783,10 @@ MOBILE RESPONSIVENESS ↓
         justify-content: flex-start;
     }
 
+    .footer__column {
+        width: calc(100% / 3);
+    }
+
     .footer__bottom {
         flex-direction: column;
         align-items: center;
@@ -1824,13 +1845,13 @@ MOBILE RESPONSIVENESS ↓
         line-height: 1.5;
     }
 
-    #features .section__title {
+    #features .section--title {
         font-size: 36px;
+        text-align: center;
     }
 
-    #feature .section__para {
+    #features .section__para {
         text-align: center;
-        max-width: 576px;
     }
 
     .feature__row {
@@ -1858,8 +1879,14 @@ MOBILE RESPONSIVENESS ↓
         font-size: 30px;
     }
 
+    .steps__title {
+        margin: 16px 0 0;
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
     .values__section--title {
-        font-size: 36px;
+        font-size: 30px;
         line-height: 1.25;
     }
 
@@ -1868,7 +1895,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .pricing__section--title {
-        font-size: 36px;
+        font-size: 30px;
         text-align: center;
         line-height: 1.25;
     }
@@ -1879,6 +1906,10 @@ MOBILE RESPONSIVENESS ↓
 
     .plan__bottom {
         padding: 2rem 1rem;
+    }
+
+    .testimonials__section--title {
+        font-size: 30px;
     }
 
     .testimonial__para {
@@ -1929,6 +1960,10 @@ MOBILE RESPONSIVENESS ↓
     .start__button {
         padding: 12px 24px;
         font-size: 14px;
+    }
+
+    .start__buttons {
+        flex-direction: column;
     }
 
     .btn {
